@@ -1,5 +1,6 @@
 package com.example.Springboot.Ecommerce.Services;
 
+import com.example.Springboot.Ecommerce.dto.CategoryDTO;
 import com.example.Springboot.Ecommerce.dto.FakeStoreCategoryDTO;
 import com.example.Springboot.Ecommerce.gateway.FakeStoreCategoryGateway;
 import com.example.Springboot.Ecommerce.gateway.ICategoryGateway;
@@ -19,7 +20,7 @@ public class FakeStoreCategoryService implements  ICategoryService{
         this.ifakestorecategorygateway=ifakestorecategorygateway;
     }
     @Override
-    public FakeStoreCategoryDTO getAllCategories() throws IOException {
+    public List<CategoryDTO> getAllCategories() throws IOException {
         return  ifakestorecategorygateway.getFakeStoreCategories();
     }
 }
