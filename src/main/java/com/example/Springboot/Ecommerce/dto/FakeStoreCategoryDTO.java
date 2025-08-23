@@ -1,12 +1,10 @@
 package com.example.Springboot.Ecommerce.dto;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.*;
 @Getter
 @Setter
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 public class FakeStoreCategoryDTO {
@@ -14,3 +12,4 @@ public class FakeStoreCategoryDTO {
     String message;
     List<String>categories;
 }
+

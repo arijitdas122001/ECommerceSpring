@@ -4,10 +4,10 @@ import lombok.*;
 
 @Getter
 @Setter
-@AllArgsConstructor
+@Builder
 @NoArgsConstructor
+@AllArgsConstructor
 public class CategoryDTO {
-    private  Long id;
     private  String name;
 }
  
